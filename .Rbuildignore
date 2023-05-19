@@ -1,2 +1,4 @@
+^renv$
+^renv\.lock$
 ^r4ds.tutoriales\.Rproj$
 ^\.Rproj\.user$
