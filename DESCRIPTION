@@ -1,10 +1,10 @@
 Package: R4DStutoriales
-Title: What the Package Does (One Line, Title Case)
+Title: Tutoriales para R4DS 1ed
 Version: 0.0.0.9000
 Authors@R: 
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Tutoriales que acompañan a la versión en español de la primera edición del libro R para Ciencia de Datos.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
