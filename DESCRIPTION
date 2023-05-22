@@ -2,8 +2,8 @@ Package: r4dstutoriales
 Title: Tutoriales para R4DS primera edición
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Xavier", "de Pedro Puente", , "xavier.depedro@seeds4c.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0005-3406-2570"))
 Description: Tutoriales que acompañan a la versión en español de la primera edición del libro R para Ciencia de Datos.
 License: Apache License (>= 2)
 Encoding: UTF-8
