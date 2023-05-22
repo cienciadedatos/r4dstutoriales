@@ -3,3 +3,5 @@
 ^r4dstutoriales\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^.github$
+^docs$

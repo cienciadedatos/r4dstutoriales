@@ -14,8 +14,6 @@ description: >
 
 ```{r setup, include=FALSE}
 library(learnr)
-library(tidyverse)
-library(nycflights13)
 library(datos)
 millas <- as.data.frame(datos::millas) # Hack temporal del traductor del Tutorial. Forzamos aquí a mantener "millas" como data.frame() en memoria de R porque justamente el tutorial quiere mostrar la diferencia entre un tibble y un data.frame usando "millas" como data.frame, y parece que en el paquete "datos", el objeto millas se carga como data frame por omisión en la memoria de R. 
 tutorial_options(exercise.timelimit = 60)

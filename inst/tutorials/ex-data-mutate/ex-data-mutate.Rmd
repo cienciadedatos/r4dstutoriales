@@ -12,9 +12,7 @@ description: >
 
 ```{r setup, include=FALSE}
 library(learnr)
-library(tidyverse)
-library(nycflights13)
-library(Lahman)
+library(dplyr)
 library(datos)
 
 tutorial_options(

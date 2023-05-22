@@ -50,19 +50,9 @@ jobs:
           pak::local_install_dev_deps()
         shell: Rscript {0}
 
-      - name: Cache bookdown results
-        uses: actions/cache@v3
-        with:
-          path: _bookdown_files
-          key: bookdown-3-${{ hashFiles('**/*Rmd') }}
-          restore-keys: bookdown-3-
-
       - name: Build site
         run: |
-          # Allows [implcit heading links] to work; will need to convert
-          # to explicit before switching to visual editor
-          options(bookdown.render.file_scope = FALSE)
-          bookdown::render_book("index.Rmd")
+          pkgdown::build_site(preview = FALSE)
         shell: Rscript {0}
 
       - name: Set SSH key
@@ -91,8 +81,16 @@ jobs:
           cp -r CNAME gh-pages/
 
           # commit and push
+
           cd gh-pages
-          git add .
-          git commit -m "Update gh-pages"
-          git push origin gh-pages
+
+          # count the modified files
+          modified=$(git status --porcelain | wc -l)
+
+          # if there are changes, push them
+          if [ $modified -gt 0 ]; then
+            git add .
+            git commit -m "Update gh-pages"
+            git push origin gh-pages
+          fi
         shell: bash

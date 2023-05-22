@@ -1,0 +1,51 @@
+---
+output: github_document
+---
+
+<!-- README is generated from README.Rmd, edit ONLY this file if needed. But, after you edit it, you NEED TO KNIT IT BY HAND in order to create the new README.md, which is the thing which is actually used. -->
+
+```{r, include = FALSE}
+
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/README-",
+  out.width = "100%"
+)
+```
+
+# Tutoriales para la primera edición de 'R Para Ciencia de Datos'
+
+## Acerca de este paquete
+
+**r4dstutoriales** provee los tutoriales de la primera edición de [*R Para Ciencia de Datos*](https://cienciadedatos.github.io/r4ds/).
+
+## Instalación
+
+La versión de desarrollo se puede obtener desde [GitHub](https://github.com/) con1:
+
+``` r
+remotes::install_github("cienciadedatos/r4dstutoriales")
+```
+
+Si R pregunta por actualizar algunos paquetes, se recomienda hacerlo. Para paquetes que necesitan compilación, puedes responder "no".
+
+Luego **reinicia tu sesión de R** o **reinicia RStudio**.
+
+## Acceder a los tutoriales
+
+Para acceder a los tutoriales, primero carga el paquete.
+
+``` r
+library(r4dstutoriales)
+```
+
+Luego, puedes acceder a los tutoriales desde la pestaña de tutoriales en el panel superior derecho (Environment) de RStudio.
+
+Si no puedes encontrar la pestaña de tutoriales, o no puedes encontrar los tutoriales de r4ds, **recuerda reiniciar tu sesión de R** después de instalar el paquete.
+
+Debido a que los tutoriales dentro del panel de tutoriales están ordenados alfabéticamente por el nombre del paquete, los tutoriales de **r4dstutoriales** estarán hacia el final. Si no ves ningún tutorial, intenta hacer clic en el botón "Home" (el pequeño símbolo de casa con el techo rojo delgado en la parte superior derecha).
+
+Para expandir la ventana, puedes arrastrar y agrandar el panel de tutoriales dentro de RStudio. Para abrir una ventana emergente, haz clic en el icono "Mostrar en Nueva Ventana" junto al icono de inicio.
+
+Podrás observar que la pestaña de trabajos en la parte inferior izquierda creará una salida a medida que el tutorial se inicia. Esto se debe a que RStudio está ejecutando el código para crear el tutorial. Si accidentalmente hiciste clic en "Start Tutorial" y deseas detener el trabajo en ejecución, puedes hacer clic en la flecha hacia atrás en la pestaña de trabajos y luego presionar el ícono de señal de alto rojo. Tu trabajo se guardará entre las sesiones de RStudio, lo que significa que puedes completar un tutorial en múltiples sesiones. Una vez que hayas completado un tutorial, sigue las instrucciones en la página `Submit` del tutorial y, si eres un estudiante, envía tus respuestas según las instrucciones.
