@@ -1,14 +1,13 @@
-Package: r4ds.tutoriales
-Title: Tutoriales para R4DS 1ed
+Package: r4dstutoriales
+Title: Tutoriales para R4DS primera edición
 Version: 0.0.0.9000
 Authors@R: 
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: Tutoriales que acompañan a la versión en español de la primera edición del libro R para Ciencia de Datos.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: Apache License (>= 2)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-URL: https://github.com/cienciadedatos/R4DStutoriales
-BugReports: https://github.com/cienciadedatos/R4DStutoriales/issues
+URL: https://github.com/cienciadedatos/r4dstutoriales
+BugReports: https://github.com/cienciadedatos/r4dstutoriales/issues
