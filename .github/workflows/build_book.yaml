@@ -78,9 +78,6 @@ jobs:
           # copy docs/ to gh-pages/
           cp -r docs/* gh-pages/
 
-          # copy CNAME to gh-pages/
-          cp -r CNAME gh-pages/
-
           # commit and push
 
           cd gh-pages
