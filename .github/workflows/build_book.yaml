@@ -70,7 +70,7 @@ jobs:
           git config --global user.email "noemail@cienciade.datos"
 
           # clone gh-pages branch to gh-pages/
-          git clone --single-branch --branch gh-pages git@github.com:cienciadedatos/r4ds.git gh-pages
+          git clone --single-branch --branch gh-pages git@github.com:cienciadedatos/r4dstutoriales.git gh-pages
 
           # remove everything inside gh-pages except .git/
           find gh-pages -maxdepth 1 ! -name .git ! -name gh-pages -exec rm -rf {} \;
