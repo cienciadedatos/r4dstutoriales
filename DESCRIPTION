@@ -3,14 +3,13 @@ Title: Tutoriales para R4DS primera edición
 Version: 0.0.0.9000
 Authors@R: 
     c(
-        person("Xavier", "de Pedro Puente", , "xavier.depedro@seeds4c.org", role = c("aut"),
+        person("Xavier", "de Pedro Puente", role = c("aut"),
             comment = c(ORCID = "0009-0005-3406-2570")),
         person("Mauricio", "Vargas Sepulveda", role = c("aut","cre"), 
             email = "m.sepulveda@mail.utoronto.ca", 
             comment = c(ORCID = "0000-0003-1017-7574")),
-        person("Riva", "Quiroga", role = c("aut","cre"), 
-            email = "m.sepulveda@mail.utoronto.ca", 
-            comment = c(ORCID = "0000-0003-1017-7574"))
+        person("Riva", "Quiroga", role = c("aut"), 
+            email = "m.sepulveda@mail.utoronto.ca")
     )
 Description: Tutoriales que acompañan a la versión en español de la primera edición del libro R para Ciencia de Datos.
 License: Apache License (>= 2)

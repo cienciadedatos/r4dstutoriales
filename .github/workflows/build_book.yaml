@@ -32,10 +32,10 @@ jobs:
       - name: Get R version
         id: get-r-version
         run: echo "version=$(Rscript -e 'cat(as.character(getRversion()))')" >> $GITHUB_OUTPUT
-        shell: bash  
+        shell: bash
 
       - name: Cache R packages
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-${{ steps.get-r-version.outputs.version }}-3-
@@ -45,9 +45,10 @@ jobs:
           install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
         shell: Rscript {0}
 
-      - name: Install dependencies
+      - name: Install dependencies and package
         run: |
           pak::local_install_dev_deps()
+          pak::pkg_install("cienciadedatos/r4dstutoriales")
         shell: Rscript {0}
 
       - name: Build site
@@ -60,7 +61,7 @@ jobs:
         uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.SSH_KEY }}
-      
+
       - name: Push to gh-pages
         if: github.event_name != 'pull_request'
         run: |
